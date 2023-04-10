@@ -341,12 +341,10 @@ console.log(emailCheck('cghdhh@gmail.com'))
 */
 
 //CODE HERE
-function buyFrogs(gold){
-  let temp = Number(gold)
-  return Math.floor(temp/3)
-}
-let totalFrogs = buyFrogs(10)
-console.log(totalFrogs)
+const buyFrogs = gold => gold/3
+
+let totalFrogs = buyFrogs(4)
+console.log("Total frogs",totalFrogs)
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
@@ -354,7 +352,10 @@ console.log(totalFrogs)
 */
 
 //CODE HERE
+const buyFrogs2 = gold => Math.floor(buyFrogs(gold))
 
+let totalFrogs2 = buyFrogs2(4)
+console.log("Total frogs2",totalFrogs2)
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
@@ -366,10 +367,8 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 function ascending(arr){
   for(let i = 0; i < arr.length; i++){
     if( arr[i] > arr[i+1]){
-      console.log(`${arr[i]} > ${arr[i+1]}`)
       return false
     }
-    console.log(`${arr[i]} > ${arr[i+1]}`)
   }
     return true
 }
