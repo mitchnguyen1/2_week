@@ -20,3 +20,5 @@ function findLuckyNum(num){
 console.log(findLuckyNum(2))
 console.log(findLuckyNum(10))
 console.log(findLuckyNum(5))
+console.log(findLuckyNum(1))
+console.log(findLuckyNum(3))
