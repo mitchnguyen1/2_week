@@ -12,7 +12,10 @@
 function findLuckyNum(num){
     let ans = []
     for(let i = 0; i < num; i++){
-        ans.push(Math.floor(Math.random()*11))
+        let temp = Math.floor(Math.random()*11)
+        if(!ans.includes(temp)){
+            ans.push(temp)
+        }
     }
     return ans;
 }
