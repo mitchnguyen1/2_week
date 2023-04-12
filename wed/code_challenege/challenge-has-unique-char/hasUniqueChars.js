@@ -7,13 +7,37 @@
 // hasUniqueChars("Moonday")
 // returns false
 
+
+//lowercase the entire string
+//for loop to iterate through the entire string
+    //define array
+    //if char includes in array
+        //return false
+    //add to set
+//return true
+
+//this function will compare values within a hashmap
+function unique(str){
+    let ans = []
+    for(let i =0; i<str.length;i++){
+        if(ans.includes(str.charAt(i))){
+            return false
+        }
+        ans.push(str.charAt(i))
+    }
+    return true;
+}
+console.log("Array:",unique("test"))
+console.log("Array:",unique("Monday"))
+console.log("Array:",unique("Moonday"))
+
 //lowercase the entire string
 //for loop to iterate through the entire string
     //define set
     //if char contains in set
         //return false
     //add to set
-//return false
+//return true
 
 //this function will compare values within a hashmap
 function uniqueChar(str){
@@ -27,9 +51,9 @@ function uniqueChar(str){
     }
     return true;
 }
-console.log("uniqueChar:",uniqueChar("TEST"))
-console.log("uniqueChar:",uniqueChar("Monday"))
-console.log("uniqueChar:",uniqueChar("Moonday"))
+console.log("Map:",uniqueChar("TEST"))
+console.log("Map:",uniqueChar("Monday"))
+console.log("Map:",uniqueChar("Moonday"))
 
 
 //this function will compare the length of the set and string
@@ -49,6 +73,6 @@ function uniqueSize(str){
     }
     return set.size === size
 }
-console.log("uniqueSize:",uniqueSize("TEST"))
-console.log("uniqueSize:",uniqueSize("Monday"))
-console.log("uniqueSize:",uniqueSize("Moonday"))
+console.log("Set:",uniqueSize("TEST"))
+console.log("Set:",uniqueSize("Monday"))
+console.log("Set:",uniqueSize("Moonday"))
