@@ -16,7 +16,7 @@
     //add to set
 //return true
 
-//this function will compare values within a hashmap
+//this function will compare values within a array
 function unique(str){
     let ans = []
     for(let i =0; i<str.length;i++){
